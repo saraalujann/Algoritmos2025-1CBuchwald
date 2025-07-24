@@ -63,14 +63,14 @@ Considerar que todas las primitivas (exceptuando `Iterar`) deben funcionar en ti
 
 Las pruebas deben incluir los casos básicos de TDA similares a los contemplados para la pila y la cola, y adicionalmente debe verificar los siguientes casos del iterador externo:
 
-1. Al insertar un elemento en la posición en la que se crea el iterador, efectivamente se inserta al principio.
-- Insertar un elemento cuando el iterador está al final efectivamente es equivalente a insertar al final.
-- Insertar un elemento en el medio se hace en la posición correcta.
-- Al remover el elemento cuando se crea el iterador, cambia el primer elemento de la lista.
-- Remover el último elemento con el iterador cambia el último de la lista.
-- Verificar que al remover un elemento del medio, este no está.
-- Otros casos borde que pueden encontrarse al utilizar el iterador externo.
-- Casos del iterador interno, incluyendo casos con corte (la función `visitar` devuelve `false` eventualmente).
+1. Al **insertar un elemento** en la posición en la que se crea el iterador, efectivamente se inserta al principio.
+2. Insertar un elemento cuando el iterador está al final efectivamente es equivalente a insertar al final.
+3. Insertar un elemento en el medio se hace en la posición correcta.
+4. Al **remover el elemento** cuando se crea el iterador, cambia el primer elemento de la lista.
+5. Remover el último elemento con el iterador cambia el último de la lista.
+6. Verificar que al remover un elemento del medio, este no está.
+7. Otros **casos borde** que pueden encontrarse al utilizar el iterador externo.
+8. **Casos del iterador interno**, incluyendo casos con corte (la función `visitar` devuelve `false` eventualmente).
 
 Al igual que en los casos anteriores, deberán entregar en formato digital, subiendo el código a la página de entregas de la materia, con el código completo.
 

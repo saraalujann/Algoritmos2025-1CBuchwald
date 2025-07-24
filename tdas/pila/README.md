@@ -35,32 +35,18 @@ El archivo `pila_dinamica.go` debe ser parte del paquete `pila` (tal y como se e
 
 Las pruebas deberán verificar que:
 
-1. **Crear una Pila vacía**:
-   - Se debe poder crear una Pila vacía, y debe comportarse como tal.
+### Requisitos de la implementación de la Pila
 
-2. **Apilar y Desapilar elementos**:
-   - Se deben poder apilar elementos, y al desapilarlos, se debe mantener el invariante de pila (LIFO).
-   - Probar con elementos diferentes y verificar que salgan en el orden esperado.
-
-3. **Prueba de volumen**:
-   - Se deben poder apilar muchos elementos (1,000, 10,000 elementos o el volumen que corresponda).
-   - Hacer crecer la pila y desapilar hasta que esté vacía, verificando que siempre cumpla el invariante.
-   - Comprobar que el tope de la pila sea el correcto en cada paso, y que el nuevo tope después de cada desapilar también sea el correcto.
-
-4. **Condición de borde (Pila vacía)**:
-   - Comprobar que una pila vacía se comporte como recién creada.
-
-5. **Condición de borde (Desapilar en Pila vacía)**:
-   - Las acciones para desapilar y ver el tope de una pila recién creada deben ser inválidas.
-
-6. **Condición de borde (Pila vacía)**:
-   - La acción para ver si una pila recién creada está vacía debe devolver verdadero.
-
-7. **Condición de borde (Desapilar en Pila vacía después de operaciones)**:
-   - Las acciones para desapilar y ver el tope de una pila que se ha apilado y desapilado hasta quedar vacía deben ser inválidas.
-
-8. **Probar con diferentes tipos de datos**:
-   - Probar apilar y desapilar diferentes tipos de datos: enteros, cadenas, etc.
+1. **Se pueda crear una Pila vacía**, y ésta se comporta como tal.
+2. **Se puedan apilar elementos**, que al desapilarlos se mantenga el invariante de pila (que esta es LIFO). Probar con elementos diferentes, y ver que salgan en el orden deseado.
+3. **Prueba de volumen**: Se pueden apilar muchos elementos (1.000, 10.000 elementos, o el volumen que corresponda). Hacer crecer la pila, y desapilar elementos hasta que esté vacía, comprobando que siempre cumpla el invariante. 
+   - Recordar no apilar siempre lo mismo.
+   - Validar que se cumpla siempre que el tope de la pila sea el correcto paso a paso, y que el nuevo tope después de cada desapilar también sea el correcto.
+4. **Condición de borde**: Comprobar que una pila vacía se comporte como recién creada.
+5. **Condición de borde**: Las acciones para desapilar y ver el tope de una pila recién creada son inválidas.
+6. **Condición de borde**: La acción para ver si una pila recién creada está vacía es verdadera.
+7. **Condición de borde**: Las acciones para desapilar y ver el tope de una pila a la que se le apiló y desapiló hasta estar
+8. **Probar apilar diferentes tipos de datos**: Probar con una pila de enteros, con una pila de cadenas, etc.
 
 Además de todos los casos no descriptos que ustedes crean **necesarios**.
 

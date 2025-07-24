@@ -12,7 +12,7 @@ func CrearColaEnlazada[T any]() Cola[T] {
 
 La cola debe ser enlazada, es decir, que en lugar de usar un arreglo, usa nodos enlazados, de los cuales se desencola el primero y se encola a continuación del último. Por tanto, se debe implementar solamente con punteros, y no se debe guardar en un campo el tamaño de la cola. El archivo a entregar para la implementación debe ser `cola_enlazada.go`, que se encuentre en el paquete `cola`.
 
-Deben entregar también un archivo `cola_test.go` (que esté dentro del paquete `cola_test`) que haga las correspondientes pruebas unitarias, análogas a las pedidas para Pila, obviamente considerando que el invariante cambia a su opuesto (FIFO).
+Deben entregar también un archivo `cola_test.go` (que esté dentro del paquete `cola_test`) que haga las correspondientes pruebas unitarias, análogas a las pedidas para *Pila*, obviamente considerando que el invariante cambia a su opuesto (FIFO).
 
 Este nuevo paquete debería estar en el módulo de TDAs, como en el caso de la pila:
 

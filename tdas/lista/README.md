@@ -19,7 +19,7 @@ type Lista[T any] interface {
 }
 ```
 
-En caso que se invoque a `BorrarPrimero`, `VerPrimero` o `VerUltimo` sobre una lista vacía, todas deben entrar en pánico con un mensaje **La lista está vacía**.
+En caso que se invoque a `BorrarPrimero`, `VerPrimero` o `VerUltimo` sobre una lista vacía, todas deben entrar en pánico con un mensaje ***La lista está vacía***.
 
 Además, es necesario tener la primitiva de creación de la lista enlazada (`lista_enlazada.go`):
 
@@ -53,7 +53,7 @@ type IteradorLista[T any] interface {
 }
 ```
 
-En caso que se invoque a `VerActual`, `Siguiente` o `Borrar` sobre un iterador que ya haya iterado todos los elementos, debe entrar en pánico con un mensaje **El iterador terminó de iterar**.
+En caso que se invoque a `VerActual`, `Siguiente` o `Borrar` sobre un iterador que ya haya iterado todos los elementos, debe entrar en pánico con un mensaje ***El iterador terminó de iterar***.
 
 ## Pruebas
 

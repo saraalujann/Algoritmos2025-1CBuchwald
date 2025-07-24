@@ -186,7 +186,7 @@ Se proveen ejemplos completos para mostrar la salida esperada en cada instrucci�
 ## Agregar_archivo
 *Ejemplo*: `agregar_archivo vuelos-algueiza-parte-01.csv`
 
-*Salida esperada:
+*Salida esperada*:
 
 Si el comando se ejecuta correctamente deberá imprimir **OK** por salida estándar después de ser ejecutado. Si se produce un error al procesar el archivo se imprime `Error en comando <comando>` por `stderr` y se continua la ejecución.
 

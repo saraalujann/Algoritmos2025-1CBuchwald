@@ -4,7 +4,7 @@ El trabajo a realizar es el de una implementación de pila dinámica (es decir, 
 
 En el adjunto en el sitio de descargas encontrarán el archivo `pila.go` que tienen que utilizar. En este archivo están definidas las primitivas que tendrán que implementar, con su correspondiente documentación. Todas las primitivas tienen que funcionar en tiempo constante.
 
-**Importante:** La función debe devolver un elemento de tipo `Pila`, ya que la estructura no debe exportarse.
+**Importante:** La función debe devolver un elemento de tipo **Pila**, ya que la estructura no debe exportarse.
 
 ## Implementación
 
@@ -35,17 +35,16 @@ El archivo `pila_dinamica.go` debe ser parte del paquete `pila` (tal y como se e
 
 Las pruebas deberán verificar que:
 
-- Se pueda crear una Pila vacía, y ésta se comporta como tal.
-- Se puedan apilar elementos, que al desapilarlos se mantenga el invariante de pila (que esta es LIFO). Probar con elementos diferentes, y ver que salgan en el orden deseado.
-- **Prueba de volumen:** Se pueden apilar muchos elementos (1.000, 10.000 elementos, o el volumen que corresponda): hacer crecer la pila, y desapilar elementos hasta que esté vacía, comprobando que siempre cumpla el invariante. Recordar no apilar siempre lo mismo, validar que se cumpla siempre que el tope de la pila sea el correcto paso a paso, y que el nuevo tope después de cada desapilar también sea el correcto.
-- **Condición de borde:** comprobar que una pila vacía se comporte como recién creada.
-- **Condición de borde:** las acciones para desapilar y ver tope de una pila recién creada son inválidas.
-- **Condición de borde:** la acción para ver si una pila recién creada está vacía es verdadero.
-- **Condición de borde:** las acciones para desapilar y ver el tope de una pila a la que se le apiló y desapiló hasta estar vacía son inválidas.
-- Probar apilar diferentes tipos de datos: probar con una pila de enteros, con una pila de cadenas, etc.
-- Además de todos los casos no descriptos que ustedes crean necesarios.
+1 Se pueda crear una *Pila vacía*, y ésta se comporta como tal.
+2 Se puedan apilar elementos, que al desapilarlos se mantenga el invariante de pila (que esta es LIFO). Probar con elementos diferentes, y ver que salgan en el orden deseado.
+3 **Prueba de volumen:** Se pueden apilar muchos elementos (1.000, 10.000 elementos, o el volumen que corresponda): hacer crecer la pila, y desapilar elementos hasta que esté vacía, comprobando que siempre cumpla el invariante. Recordar no apilar siempre lo mismo, validar que se cumpla siempre que el tope de la pila sea el correcto paso a paso, y que el nuevo tope después de cada desapilar también sea el correcto.
+4 **Condición de borde:** comprobar que una pila vacía se comporte como recién creada.
+5 **Condición de borde:** las acciones para desapilar y ver tope de una pila recién creada son inválidas.
+6 **Condición de borde:** la acción para ver si una pila recién creada está vacía es verdadero.
+7 **Condición de borde:** las acciones para desapilar y ver el tope de una pila a la que se le apiló y desapiló hasta estar vacía son inválidas.
+8 Probar apilar diferentes tipos de datos: probar con una pila de enteros, con una pila de cadenas, etc.
 
-## Estructura de Directorios
+Además de todos los casos no descriptos que ustedes crean **necesarios**.
 
 La estructura de directorios del módulo/proyecto en el que se deberá trabajar es:
 
@@ -60,9 +59,7 @@ tdas
 
 Revisar el video de cómo realizar los módulos para las diferentes entregas.
 
-## Compilación y Pruebas
-
-Para compilar y verificar las pruebas:
+##Forma de compilación.
 
 Compilar todo el código:
 

@@ -15,45 +15,65 @@ tp0 (o como gusten llamarle al directorio del tp)
      | -> tp0.go
      | -> tp0_test.go
 ```
-Recuerden hacer go mod tidy. Para la primera parte del tp simplemente pueden ejecutar
+Recuerden hacer `go mod tidy`. Para la primera parte del tp simplemente pueden ejecutar
 
-Las pruebas deben dar todas OK, y las pueden ejecutar con:
+Las pruebas deben dar todas OK.
 
+## Formas de ejecución.
+```sh
 cd ejercicios
 go test tp0_test.go
+```
+
 O simplemente:
 
+```sh
 cd ejercicios
 go test
+```
+
 Luego que todas las pruebas ejecuten correctamente, deben implementar un programa (en el archivo principal, main.go que mencionamos antes) que:
 
-Abra y lea de dos archivos de texto regulares (llamados archivo1.in y archivo2.in). Cada archivo tendrá varias líneas, donde en cada línea habrá un único número y nada más. En total, este archivo será la representación de un arreglo de números. Por ejemplo, el contenido de archivo1.in podría ser:
+Abra y lea de dos archivos de texto regulares (llamados *archivo1.in* y *archivo2.in*). Cada archivo tendrá varias líneas, donde en cada línea habrá un único número y nada más. En total, este archivo será la representación de un arreglo de números. Por ejemplo, el contenido de archivo1.in podría ser:
+```
   1
   7
   12
   8
   2
   1
+```
 Se debe leer cada uno de los archivos, y cargar en memoria los arreglos correspondientes, leyendo cada componente y convertir cada uno de los elementos a int (para lo que pueden utilizar la función Atoi del módulo strconv). Pueden asumir que no van a haber errores en las lecturas, ni letras donde deben haber números, etc…
 Una vez obtenidos los arreglos, averiguar el arreglo que sea el mayor entre los dos, y se debe imprimir de forma ordenada. Para esto, utilizar las funciones Comparar y Seleccion previamente implementadas. Para imprimir, hacerlo en el mismo formato que en el que vienen en los archivos. Es decir, una componente por línea. Si el arreglo más grande fuera [2, 1, 7, 3], habría que imprimir:
+```
   1
   2
   3
   7
+```
 La compilación (estando ubicados en el directorio principal del módulo) se realiza con el siguiente comando:
 
+```sh
 go build tp0
+```
+
 Luego, pueden ejecutar el programa haciendo:
 
+```sh
 ./tp0
-Antes de realizar la entrega, es importante que cualquier archivo entregado cumpla con el formato de Go (en este caso particular, tp0.go y main.go, pero aplicar para cualquier entrega de aquí en más). Para lograr esto, simplemente deben correr el comando:
+```
 
+Antes de realizar la entrega, es **importante** que cualquier archivo entregado cumpla con el formato de Go (en este caso particular, `tp0.go` y `main.go`, pero aplicar para cualquier entrega de aquí en más). Para lograr esto, simplemente deben correr el comando:
+
+```sh
 go fmt <nombre del archivo>
-En este caso, <nombre del archivo> vendría a ser tp0.go (o ejercicios/tp0.go, si están parados desde el directorio del tp0, y no desde el de ejercicios).
+```
 
-La entrega se hará de forma digital subiendo el código a la página de entregas de la materia. Deben entregar un archivo zip con los entregables. Deben entregar un zip con todo el contenido del módulo.
+En este caso, ***<nombre del archivo>*** vendría a ser `tp0.go` (o `ejercicios/tp0.go`, si están parados desde el directorio del *tp0*, y no desde el de ejercicios).
 
-Es MUY importante que no agreguen en el zip ningún archivo relacionado a algún repositorio git que utilicen externamente ustedes. Es decir, si ustedes aparte utilizan git, revisen antes de entregar que no incluyan en el zip el directorio .git (que guarda información del repositorio) porque este colisionará con la información del repositorio de ustedes, entre otras cosas de nuestros sistemas, y arreglar esto puede demorar.
+La entrega se hará de forma digital subiendo el código a la página de entregas de la materia. Deben entregar un **archivo zip** con los entregables. Deben entregar un zip con todo el contenido del módulo.
+
+Es **MUY importante** que no agreguen en el zip ningún archivo relacionado a algún repositorio git que utilicen externamente ustedes. Es decir, si ustedes aparte utilizan git, revisen antes de entregar que no incluyan en el zip el directorio `.git` (que guarda información del repositorio) porque este colisionará con la información del repositorio de ustedes, entre otras cosas de nuestros sistemas, y arreglar esto puede demorar.
 
 En caso de encontrarse con dificultades para armar el módulo como es descripto aquí, les dejamos un video explicativo paso a paso para esta entrega.
 

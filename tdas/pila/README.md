@@ -63,7 +63,7 @@ tdas
 
 Revisar el video de cómo realizar los módulos para las diferentes entregas.
 
-##Forma de compilación.
+## Forma de compilación.
 
 Compilar todo el código:
 
